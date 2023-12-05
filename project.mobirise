@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "name": "stargatefin-ance",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/straight-finance.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://stargatefin-ance.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://stargatefin-ance.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "klqasrjqyj",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Stargate Finance™ | Home Official Site",
+        "meta_descr": "Stargate is a protocol that allows users to transfer and swap native assets cross-chain while accessing unified liquidity pools with instant finality. Users can also farm, stake and lock …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/0f96e3f8-2b3a-4aeb-a6c7-5a4075190b07.jpeg\" alt=\"stargate finance\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tXxFXIO907",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Stargate Finance™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  <a href=\"https://stargate.finance/\" class=\"text-primary\"><b>Stargate Finance</b></a> emerges as a trailblazing decentralized finance (DeFi) platform built on the Cosmos blockchain ecosystem. With its innovative approach to interoperability, efficient cross-chain communication, and diverse financial services, Stargate Finance is revolutionizing the way we engage with decentralized finance. In this article, we will explore the unique features, benefits, and potential impact of Stargate Finance in shaping the future of the Cosmos ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Cosmos Ecosystem and Interoperability:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Cosmos ecosystem is a collection of sovereign blockchains designed to enable seamless communication and interoperability between different chains. It addresses the scalability and fragmentation challenges faced by individual blockchains by providing a framework for cross-chain interactions. Stargate Finance harnesses the power of Cosmos to create a decentralized financial infrastructure that leverages interoperability.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Stargate Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  Stargate Finance serves as a comprehensive DeFi platform within the Cosmos ecosystem, offering a wide range of financial services, including lending, borrowing, yield farming, and decentralized exchanges (DEXs). By utilizing the Cosmos SDK and Inter-Blockchain Communication (IBC) protocol, Stargate Finance enables the seamless transfer of assets and data between various blockchains within the Cosmos ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Stargate Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Interoperability:</b> Stargate Finance leverages the Cosmos IBC protocol to establish interoperability between different chains. This allows users to access and utilize a diverse range of financial services across multiple blockchains, fostering a more interconnected and inclusive DeFi ecosystem.\n<br>\n<br><b>b. Cross-Chain Assets and Liquidity:</b> Stargate Finance enables the transfer of assets and liquidity across different chains within the Cosmos ecosystem. Users can access a broader range of assets, participate in cross-chain liquidity pools, and benefit from enhanced market depth and liquidity.\n<br>\n<br><b>c. Decentralized Lending and Borrowing:</b> Stargate Finance provides decentralized lending and borrowing services, allowing users to lend their assets and earn interest or borrow assets by collateralizing their holdings. The platform utilizes smart contracts to automate lending and borrowing processes, ensuring transparency and security.\n<br>\n<br><b>d. Yield Farming and Staking:</b> Stargate Finance offers yield farming and staking opportunities, where users can lock their assets to earn additional rewards. By participating in various liquidity mining pools and staking mechanisms, users can contribute to network security and earn passive income.\n<br>\n<br><b>e. Decentralized Exchanges:</b> Stargate Finance incorporates decentralized exchange functionalities, enabling users to trade assets directly from their wallets. This eliminates the need for intermediaries, enhances security, and promotes a more decentralized and permissionless trading experience.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Stargate Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Interconnected DeFi Ecosystem:</b> Stargate Finance fosters a more interconnected DeFi ecosystem within Cosmos, enabling users to access a wider range of financial services and assets across multiple chains. This promotes collaboration, innovation, and the seamless flow of liquidity.\n<br>\n<br><b>b. Enhanced Liquidity and Market Depth:</b> By facilitating cross-chain asset transfers and liquidity pools, Stargate Finance enhances market depth and liquidity across the Cosmos ecosystem. This attracts more participants, reduces slippage, and improves overall trading efficiency.\n<br>\n<br><b>c. Decentralization and Security:</b> Stargate Finance leverages the decentralized nature of the Cosmos ecosystem to ensure security and transparency in financial transactions. Smart contracts and cryptographic protocols protect user funds, and the distributed governance model allows stakeholders to participate in decision-making processes.\n<br>\n<br><b>d. User Empowerment and Accessibility:</b> Stargate Finance aims to provide a user-friendly and accessible DeFi experience for both experienced users and newcomers. The platform integrates with existing wallets and interfaces, simplifying the onboarding process and making DeFi services more accessible to a broader audience.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases and Potential Impact:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Cross-Chain Asset Management:</b> Stargate Finance enables users to manage their assets across multiple chains within the Cosmos ecosystem, allowing for more diversified investment strategies and risk management.\n<br>\n<br><b>b. Cross-Chain Yield Optimization:</b> Stargate Finance's cross-chain liquidity pools and yield farming opportunities enable users to optimize their yield generation strategies. By tapping into various chains and assets, users can maximize their returns and explore new opportunities.\n<br>\n<br><b>c. Cross-Chain Collaboration: </b>Stargate Finance encourages collaboration between different DeFi projects and chains within the Cosmos ecosystem. Developers can leverage the interoperability provided by Stargate Finance to create cross-chain applications and protocols, enhancing the overall innovation and efficiency of the ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Future Developments:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While Stargate Finance holds immense potential, it also faces challenges such as network scalability, user adoption, and security vulnerabilities. Ongoing research and development efforts are necessary to address these challenges and ensure the long-term viability and sustainability of the platform. Additionally, Stargate Finance will continue to evolve and integrate with emerging technologies within the Cosmos ecosystem, further enhancing its capabilities and impact.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://stargatefin-ance.github.io\" class=\"text-primary\"><b>Stargate Finance</b></a> represents a significant leap forward in the evolution of decentralized finance within the Cosmos eco system. By leveraging Cosmos' interoperability and cross-chain communication, Stargate Finance unlocks a new realm of possibilities in DeFi, providing users with access to diverse financial services, cross-chain liquidity, and decentralized exchanges. With its focus on user empowerment, security, and accessibility, Stargate Finance is poised to reshape the financial landscape within the Cosmos ecosystem, driving innovation, collaboration, and the seamless flow of assets and liquidity. As the platform continues to develop and expand, it holds the potential to revolutionize the way we engage with decentralized finance, creating a more interconnected and inclusive future for the Cosmos ecosystem and beyond.\n<br>\n<br><b>*** Disclaimer :-This website contains information that only educates people. We never guarantee the correctness of any piece of data given on this site. Our motive is not to promote, suggest or recommend anything to anyone. ***</b></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tXxFYDc0cb",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
